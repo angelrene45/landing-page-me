@@ -1,7 +1,8 @@
 'use client'
+/* eslint-disable react/no-unescaped-entities */
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/Button"
+import { Card, CardContent } from "@/components/ui/Card"
 import { Briefcase, GraduationCap, Mail, Linkedin, ChevronRight, Menu, X } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
