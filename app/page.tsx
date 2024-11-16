@@ -7,9 +7,12 @@ import { Briefcase, GraduationCap, Mail, Linkedin, ChevronRight, Menu, X } from 
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import Projects from "@/components/ui/Projects";
 
 
 export default function Home() {
+
+
   useEffect(() => {
     const smoothScroll = (e: MouseEvent) => {
       e.preventDefault()
@@ -38,43 +41,43 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-   <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between">
-        {/* Nombre visible solo en pantallas medianas y grandes */}
-        <Link className="mr-4 flex items-center space-x-2 hidden md:flex" href="/">
-          <span className="font-bold">&nbsp; &nbsp; &nbsp; Ángel René Herrera Calzada</span>
-        </Link>
-        {/* Botón de menú visible solo en pantallas pequeñas */}
-        <button
-          className="md:hidden p-2"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-        {/* Menú de navegación siempre horizontal */}
-        <nav className={`flex space-x-4 ${menuOpen ? 'block' : 'hidden'} md:flex`}>
-          <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#about">
-            About
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-14 items-center justify-between">
+          {/* Nombre visible solo en pantallas medianas y grandes */}
+          <Link className="mr-4 flex items-center space-x-2 hidden md:flex" href="/">
+            <span className="font-bold">&nbsp; &nbsp; &nbsp; Ángel René Herrera Calzada</span>
           </Link>
-          <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#skills">
-            Skills
-          </Link>
-          <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#experience">
-            Experience
-          </Link>
-          <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#education">
-            Education
-          </Link>
-          <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#projects">
-            Projects
-          </Link>
-          <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#contact">
-            Contact
-          </Link>
-        </nav>
-      </div>
-    </header>
+          {/* Botón de menú visible solo en pantallas pequeñas */}
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+          {/* Menú de navegación siempre horizontal */}
+          <nav className={`flex space-x-4 ${menuOpen ? 'block' : 'hidden'} md:flex`}>
+            <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#about">
+              About
+            </Link>
+            <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#skills">
+              Skills
+            </Link>
+            <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#experience">
+              Experience
+            </Link>
+            <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#education">
+              Education
+            </Link>
+            <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#projects">
+              Projects
+            </Link>
+            <Link className="transition-colors hover:text-foreground/80 text-foreground/60" href="#contact">
+              Contact
+            </Link>
+          </nav>
+        </div>
+      </header>
       <main className="flex-1">
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
@@ -241,37 +244,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">Key Projects</h2>
-            <div className="grid gap-6 mt-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-2">Data Transformation Pipeline</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Developed a complex ETL process for transforming and loading large datasets into Snowflake.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-2">Geospatial Analysis Tool</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Created a web-based tool for visualizing and analyzing geographic data using QGIS and PostGIS.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold mb-2">Automation Scripts Suite</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Developed a collection of Python scripts to automate repetitive tasks and improve team productivity.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+
+        <div id="projects">
+          <Projects title="Key Projects" jsonPath="/projects.json" />
+          <Projects title="Hackathons" jsonPath="/hackathons.json" />
+        </div>
+
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8">Contact Me</h2>

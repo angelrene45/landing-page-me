@@ -1,0 +1,110 @@
+[
+    {
+        "title": "Transformit - A Modular Python Library for ELT Processes",
+        "description": "Transformit is a Python library designed to streamline ELT (Extract, Load, Transform) workflows, enabling efficient data ingestion, transformation, and loading into Snowflake. The library is modular, scalable, and built to handle diverse data sources while ensuring traceability and observability.",
+        "features": [
+            "DataPull: Extracts data from sources such as Sybase, DB2, MQ, Web APIs, and Salesforce, inserting it into Snowflake while tracking memory usage and rows processed.",
+            "Polling: Transfers files from a network file system to Snowflake's internal staging area, logging details like file line counts and upload statuses.",
+            "StgLoad: Utilizes Snowflake's COPY command to load data from staging areas into database tables with status tracking.",
+            "Transformation: Executes SQL transformations using SQL Files, logging query types, execution times, and affected rows.",
+            "DataDownstream: Extracts data from Snowflake for downstream processes, supporting various target systems."
+        ],
+        "technologies": [
+            "Python",
+            "Snowflake",
+            "OpenTelemetry",
+            "Jenkins",
+            "GitHub Actions",
+            "Pytest",
+            "Sphinx"
+        ],
+        "outcomes": [
+            "Simplified ELT workflows with modular components, enhancing reusability and efficiency.",
+            "Provided detailed observability and traceability across all stages of the data pipeline.",
+            "Reduced time-to-market for deploying data pipelines with a production-ready, well-documented library."
+        ]
+    },
+    {
+        "title": "Transformit UI - A Comprehensive Interface for Data Management and Analytics",
+        "description": "Transformit UI is a user-friendly interface built to enhance the usability of the Transformit library. It provides tools for managing configuration tables, visualizing markdown documentation for processes, monitoring job performance, and analyzing data lineage with graphical insights.",
+        "features": [
+            "Configuration Table Management: A UI for making and managing entries to the configuration tables.",
+            "Markdown Documentation Viewer: A tool to visualize markdown files for the process workflows.",
+            "Performance Dashboard: Monitor job statuses and analyze process performance metrics.",
+            "Data Lineage Visualization: A graph-based UI that shows data flow from source to target, making it easier to identify the impact of upstream changes."
+        ],
+        "technologies": [
+            "Backend: Python, FastAPI, Snowflake, SQLLineage, Pytdot",
+            "Frontend: ReactJS, Formik, GraphVis, Markdown, Redux",
+            "CI/CD: Pytest, Jenkins Pipelines, Docker",
+            "Infrastructure: Treadmill containers, Nginx, Load Balancer with DNS and SSL Certificates"
+        ],
+        "deployment": [
+            "Unit tests written in Pytest ensure backend reliability.",
+            "CI/CD pipelines managed with Jenkins to build Docker images and deploy to Treadmill containers.",
+            "Nginx is used within the container for seamless backend-frontend integration.",
+            "A load balancer provides DNS management and SSL certification."
+        ],
+        "outcomes": [
+            "Streamlined configuration management for Transformit library.",
+            "Improved process transparency through markdown visualization and performance dashboards.",
+            "Simplified impact analysis with an intuitive data lineage visualization.",
+            "Scalable deployment process ensuring high reliability and availability of the UI."
+        ]
+    },
+    {
+        "title": "Data Engineering Tasks and Workflow Optimization",
+        "description": "Responsible for maintaining, updating, and optimizing data engineering scripts for API data extraction and ELT processes. Ensuring code quality, security, and compliance while creating comprehensive documentation and tests.",
+        "features": [
+            "Maintained and updated data engineering scripts written in Python and Shell, focusing on API data extraction and ELT pipelines.",
+            "Developed unit and integration tests to ensure robust and reliable code.",
+            "Created detailed technical documentation using Sphinx for improved knowledge sharing and maintainability.",
+            "Implemented SonarQube for continuous code quality analysis, identifying and addressing code smells, bugs, and vulnerabilities.",
+            "Integrated Snyk to scan for security vulnerabilities in dependencies and ensure compliance with organizational standards."
+        ],
+        "technologies": [
+            "Python",
+            "Shell Scripting",
+            "Sphinx",
+            "SonarQube",
+            "Snyk",
+            "Pytest",
+            "FastAPI",
+            "Snowflake"
+        ],
+        "outcomes": [
+            "Ensured high-quality, secure, and maintainable code for data engineering workflows.",
+            "Improved team productivity through comprehensive and up-to-date documentation.",
+            "Reduced deployment risks with reliable unit and integration tests.",
+            "Enhanced code compliance and security posture by proactively identifying and resolving issues using SonarQube and Snyk."
+        ]
+    },
+    {
+        "title": "Topo Load System 250K - QGIS Plugin for Topographic Data Management",
+        "description": "The Topo Load System 250K is a QGIS plugin designed to manage the loading of topographic layers at a 50K scale, validating the data against a 250K data universe. This system generates metadata files and uploads information to a PostGIS database, enabling efficient geospatial data management.",
+        "features": [
+            "Validates topographic layers by comparing them to a 250K data universe to ensure accuracy.",
+            "Automatically generates metadata files in UTM format using libraries such as python-docx, docx2txt, bs4, and xhtml2pdf.",
+            "Uploads validated layers and metadata files into a PostgreSQL database with PostGIS extension for advanced geospatial data handling.",
+            "Supports batch metadata generation and encoding for secure and efficient database storage."
+        ],
+        "technologies": [
+            "Python",
+            "PostGIS",
+            "PostgreSQL",
+            "PyQGIS",
+            "PyQt",
+            "python-docx",
+            "docx2txt",
+            "bs4",
+            "xhtml2pdf",
+            "unittest"
+        ],
+        "outcomes": [
+            "Improved geospatial data validation and accuracy through automated processes.",
+            "Streamlined metadata generation and storage, reducing manual effort.",
+            "Enhanced data management capabilities with PostgreSQL and PostGIS integration.",
+            "Provided a robust testing framework to ensure reliability and maintainability."
+        ]
+    }
+]

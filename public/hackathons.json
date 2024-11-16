@@ -1,0 +1,44 @@
+[
+    {
+        "title": "GenAI Hackathon 2023 | ResearchWizard",
+        "description": "Developed an AI-powered assistant, ResearchWizard, to enhance data accessibility and analysis for Morgan Stanley Research Data. The solution used generative AI to enable natural language interaction, data exploration, and custom visualizations, empowering users to derive actionable insights from Snowflake-hosted data.",
+        "features": [
+            "Provided a chat-based interface for querying research data, enabling users to ask business-related questions, download datasets, and request follow-up filters and custom visualizations.",
+            "Generated Snowflake SQL statements dynamically to retrieve and refine data."
+        ],
+        "technologies": [
+            "Python",
+            "Streamlit",
+            "LangChain",
+            "OpenAI APIs",
+            "PandasAI",
+            "Snowflake"
+        ],
+        "outcomes": [
+            "Simplified complex data queries and analysis for business users.",
+            "Delivered tailored SQL statements and visualizations, reducing manual effort in data exploration.",
+            "Improved decision-making capabilities by providing an interactive, AI-driven assistant for research data."
+        ]
+    },
+    {
+        "title": "GenAI Hackathon 2024 | AutoLift.AI",
+        "description": "Developed an innovative solution leveraging generative AI to modernize Morgan Stanley code repositories by identifying outdated libraries and upgrading applications to use recommended versions. The solution automated the analysis and update of dependencies in Python repositories, streamlining software maintenance processes by referencing best practices from other repositories within the organization.",
+        "features": [
+            "Implemented backend services in Python with a user interface built using Streamlit.",
+            "Designed a workflow to detect libraries, generate embeddings, and utilize RAG (retrieval-augmented generation) to propose code updates based on patterns identified in organizational repositories."
+        ],
+        "technologies": [
+            "Python",
+            "Streamlit",
+            "Almanac API",
+            "Sourcegraph API",
+            "Embeddings API",
+            "Completions API",
+            "Faiss"
+        ],
+        "outcomes": [
+            "Identified recommended library versions and generated actionable code modifications by analyzing successful implementations across organizational repositories.",
+            "Simplified the complexity of modernizing software dependencies for enterprise-level Python applications."
+        ]
+    }
+]
