@@ -19,6 +19,8 @@ bun dev
 ```bash
 cd /home/angelreh/repos/landing-page-me
 
+git pull origin main
+
 npm run build 
 
 # Stop nginx
