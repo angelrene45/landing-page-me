@@ -106,5 +106,43 @@
             "Enhanced data management capabilities with PostgreSQL and PostGIS integration.",
             "Provided a robust testing framework to ensure reliability and maintainability."
         ]
+    },
+    {
+        "title": "Data Research Data Assistant - Gen AI",
+        "description": "The Data Research Data Assistant empowers business users to interact with Snowflake semantic models through natural language, leveraging Cortex Analyst to eliminate the need for manual SQL writing. This approach accelerates insights generation by enabling rapid, self-service access to governed data, supporting informed decision-making and reducing dependency on technical resources.",
+        "features": [
+            "Natural language interaction with Snowflake semantic models, removing the need for manual SQL queries.",
+            "Accelerated insights generation through AI-powered semantic search and data exploration.",
+            "Code management and DevSecOps integration with GitHub, Jenkins pipelines, SonarQube, and Snyk.",
+            "Automated deployment pipeline using Webstax, Podman, UpLift, and Treadmill.",
+            "Backend API powered by FastAPI integrated with Snowflake Cortex Analyst.",
+            "Frontend 'AskAI' interface for intuitive question-and-answer interaction with datasets.",
+            "Automated testing and re-evaluation using Trulens.",
+            "Full observability stack with Trulens Dashboard, OpenTelemetry, and Grafana."
+        ],
+        "technologies": [
+            "GitHub",
+            "Jenkins",
+            "SonarQube",
+            "Snyk",
+            "MkDocs Material",
+            "Webstax",
+            "Podman",
+            "UpLift",
+            "Treadmill",
+            "Trulens",
+            "FastAPI",
+            "Snowflake Cortex Analyst",
+            "AskAI Frontend",
+            "OpenTelemetry",
+            "Grafana"
+        ],
+        "outcomes": [
+            "Reduced time-to-insight by enabling self-service analytics without SQL knowledge.",
+            "Increased governance and security through integrated DevSecOps workflows.",
+            "Improved deployment consistency and scalability with containerized pipelines and Treadmill orchestration.",
+            "Enhanced data quality and trust with automated evaluation and semantic model validation.",
+            "Full-stack observability enabling proactive performance monitoring and troubleshooting."
+        ]
     }
 ]
